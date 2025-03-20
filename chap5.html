@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Programming Concepts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="chap1.html">Chapter 1</a></li>
+                <li><a href="chap2.html">Chapter 2</a></li>
+                <li><a href="chap3.html">Chapter 3</a></li>
+                <li><a href="chap4.html">Chapter 4</a></li>
+                <li><a href="chap5.html">Chapter 5</a></li>
+                <li><a href="chap6.html">Chapter 6</a></li>
+                <li><a href="chap7.html">Chapter 7</a></li>
+                <li><a href="chap8.html">Chapter 8</a></li>
+                <li><a href="qna.html">QnA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Chapter 5: Programming Concepts and Logics</h1>
+        <p>Programming is the process of writing instructions for a computer to follow. Concepts like variables, data types, loops, and functions are the building blocks of any program. This chapter will cover the essential programming concepts and provide an introduction to the C programming language.</p>
+
+        <!-- Section 5.1: Programming Concept -->
+        <section id="programming-concept">
+            <h2>5.1 Programming Concept</h2>
+            
+            <h3>5.1.1 Introduction to Programming Languages</h3>
+            <p>Programming languages are used to give instructions to computers. They act as a bridge between human commands and machine operations. There are different types of programming languages that help to write software, from simple scripting languages to complex system-level languages. Examples include Python, C, Java, and JavaScript.</p>
+
+            <h3>5.1.2 Low Level, High Level, and 4GL Programming Languages</h3>
+            <p><strong>Low-Level Languages:</strong> These languages are closer to machine language and include Assembly and Machine Language. They provide greater control over hardware but are harder to learn and use.</p>
+            <p><strong>High-Level Languages:</strong> These languages are designed to be easy to read and write. Examples include Python, Java, and C++. They are closer to human languages and are abstracted from the hardware.</p>
+            <p><strong>4th Generation Languages (4GL):</strong> These are closer to human languages and are used for database management, reports, and simple applications. Examples include SQL, MATLAB, and other query languages.</p>
+
+            <h3>5.1.3 Compiler, Interpreter, and Assembler</h3>
+            <p><strong>Compiler:</strong> A compiler translates the entire high-level program into machine code in one go, creating an executable file. Example: GCC (GNU Compiler Collection) for C.</p>
+            <p><strong>Interpreter:</strong> An interpreter translates the high-level code into machine code line-by-line at runtime. Example: Python interpreter.</p>
+            <p><strong>Assembler:</strong> An assembler converts assembly language programs into machine code, enabling them to be executed by the computer's processor.</p>
+
+            <h3>5.1.4 Syntax, Semantic, and Runtime Errors</h3>
+            <p><strong>Syntax Errors:</strong> Errors that occur due to incorrect syntax, such as missing parentheses or incorrect command spelling.</p>
+            <p><strong>Semantic Errors:</strong> These are logical errors where the syntax is correct, but the program does not behave as expected.</p>
+            <p><strong>Runtime Errors:</strong> Errors that occur during program execution, such as division by zero or accessing an invalid memory location.</p>
+
+            <h3>5.1.5 Control Structures: Sequence, Selection, and Iteration</h3>
+            <p><strong>Sequence:</strong> Refers to the order in which statements are executed in a program.</p>
+            <p><strong>Selection:</strong> Involves decision-making in programs using conditional statements like if, if-else, etc.</p>
+            <p><strong>Iteration:</strong> Refers to repeating certain parts of code using loops such as for, while, and do-while loops.</p>
+
+            <h3>5.1.6 Program Design Tools: Algorithm, Flowchart, and Pseudocode</h3>
+            <p><strong>Algorithm:</strong> A step-by-step procedure for solving a problem or performing a task.</p>
+            <p><strong>Flowchart:</strong> A diagrammatic representation of the sequence of steps in a program.</p>
+            <p><strong>Pseudocode:</strong> A simplified, human-readable description of the steps in an algorithm.</p>
+
+            <h3>5.1.7 Binary, BCD, ASCII, and Unicode</h3>
+            <p><strong>Binary:</strong> A number system based on two digits, 0 and 1. It is used internally by almost all modern computers and computer-based devices because it is straightforward to implement with digital electronic circuitry.</p>
+            <p><strong>BCD (Binary-Coded Decimal):</strong> A form of binary encoding where each decimal digit is represented by its binary equivalent.</p>
+            <p><strong>ASCII:</strong> A character encoding standard that represents text in computers using 7 or 8 bits.</p>
+            <p><strong>Unicode:</strong> A computing standard that allows the consistent encoding and representation of text from virtually all writing systems.</p>
+        </section>
+
+        <!-- Section 5.2: C Programming Language -->
+        <section id="c-programming">
+            <h2>5.2 C Programming Language</h2>
+            
+            <h3>5.2.1 Introduction and Features of C Language</h3>
+            <p>C is a high-level, procedural programming language created by Dennis Ritchie in the 1970s. It is widely used for system software, application development, and embedded programming due to its efficiency, control over hardware, and portability.</p>
+
+            <h3>5.2.2 Structure of a C Program</h3>
+            <p>A typical C program consists of:</p>
+            <ul>
+                <li>Preprocessor directives</li>
+                <li>Function declarations</li>
+                <li>Main function (entry point of the program)</li>
+                <li>Variable declarations</li>
+                <li>Statements and expressions</li>
+            </ul>
+
+            <h3>5.2.3 C Preprocessor and Header Files</h3>
+            <p>The preprocessor handles directives that modify the program before the actual compilation. Header files are used to include standard functions and libraries. Example: <code>#include <stdio.h></code></p>
+
+            <h3>5.2.4 Character Set Used in C</h3>
+            <p>The C language uses a specific character set that includes letters, digits, and symbols. It is used to write valid identifiers, keywords, and operators.</p>
+
+            <h3>5.2.5 Use of Comments</h3>
+            <p>Comments are used to explain the code and make it more readable. They are ignored by the compiler. Example: <code>// This is a comment</code></p>
+
+            <h3>5.2.6 Identifiers, Keywords, and Tokens</h3>
+            <p><strong>Identifiers:</strong> Names given to variables, functions, etc. Example: <code>int age;</code></p>
+            <p><strong>Keywords:</strong> Reserved words with predefined meanings in C, like <code>int</code>, <code>if</code>, and <code>return</code>.</p>
+            <p><strong>Tokens:</strong> The smallest units in C programs, including keywords, operators, identifiers, and constants.</p>
+
+            <h3>5.2.7 Basic Data Types in C</h3>
+            <p>Common data types in C include <code>int</code>, <code>float</code>, <code>char</code>, and <code>double</code>.</p>
+
+            <h3>5.2.8 Constants and Variables</h3>
+            <p><strong>Constants:</strong> Values that cannot change during the program execution.</p>
+            <p><strong>Variables:</strong> Storage locations that hold values which can change during execution.</p>
+
+            <h3>5.2.9 Type Specifier</h3>
+            <p>Type specifiers are used to define the data type of variables. Examples: <code>int</code>, <code>float</code>.</p>
+
+            <h3>5.2.10 Simple and Compound Statements</h3>
+            <p>A simple statement consists of a single statement. A compound statement is a group of statements enclosed in braces (<code>{}</code>) and executed sequentially.</p>
+
+            <h3>5.2.11 Operators and Expressions</h3>
+            <p><strong>Arithmetic Operators:</strong> Used to perform mathematical operations like addition, subtraction, etc.</p>
+            <p><strong>Relational Operators:</strong> Used to compare values, like <code>==</code>, <code>!=</code>.</p>
+            <p><strong>Logical Operators:</strong> Used for logical operations like <code>&&</code> (AND), <code>||</code> (OR).</p>
+            <p><strong>Assignment Operator:</strong> Used to assign values to variables (<code>=</code>).</p>
+            <p><strong>Unary and Conditional Operators:</strong> Used for unary operations (e.g., <code>++</code>, <code>--</code>) and conditional expressions (e.g., <code>?</code>).</p>
+
+            <h3>5.2.12 Input/Output (I/O) Functions</h3>
+            <p>The <code>printf()</code> and <code>scanf()</code> functions are used to display output and read input, respectively, in C.</p>
+
+            <h3>5.2.13 Selection Control Statement</h3>
+            <p>Decision-making statements like <code>if</code>, <code>if-else</code>, <code>switch</code> allow a program to execute specific sections based on conditions.</p>
+
+            <h3>5.2.14 Iteration Control Statement</h3>
+            <p>Looping structures like <code>while</code>, <code>do-while</code>, and <code>for</code> are used to repeat code blocks multiple times.</p>
+
+            <h3>5.2.15 Array: Definition, Types (1D and 2D), Matrix Addition and Subtraction</h3>
+            <p>An array is a collection of similar data elements. Examples include one-dimensional and two-dimensional arrays, used in tasks like matrix addition and subtraction.</p>
+
+            <h3>5.2.16 String: Definition and String Functions</h3>
+            <p>A string is a sequence of characters. C provides built-in functions like <code>strlen()</code>, <code>strcat()</code>, <code>strcmp()</code>, <code>strrev()</code>, <code>strcpy()</code>, <code>strlwr()</code>, and <code>strupr()</code> for manipulating strings.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Computer Science Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

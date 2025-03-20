@@ -1,0 +1,195 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F9F9; /* Light beige background */
+    color: #5a3d23; /* Dark brown text color for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Header Styles */
+header {
+    background-color: #D3B79C; /* Soft tan color */
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #F2BC77; /* Muted yellow for hover effect */
+}
+
+/* Main Content Styles */
+main {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+    width: 100%;
+    max-width: 1200px; /* Keep the content within a reasonable width */
+}
+
+h1, h2, h3 {
+    color: #6F4F28; /* Dark brown headings */
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px; /* Increased space between sections */
+    padding-bottom: 30px; /* Extra padding for better section separation */
+}
+
+p {
+    font-size: 1.2em; /* Larger font size for better readability */
+    margin-bottom: 20px; /* Added margin for spacing */
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #F2BC77, #E3D7B9); /* Muted yellow gradient */
+    padding: 50px 20px;
+    color: #3E2A47; /* Dark muted purple for text */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+button {
+    background-color: #F2BC77; /* Muted yellow for buttons */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #E6A541; /* Darker yellow for hover effect */
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #D3B79C; /* Soft tan color */
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 100%; /* Ensure images never overflow */
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        margin-right: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.8em;
+    }
+}
+
+/* Section Cards (if applicable) */
+.highlight-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-card h3 {
+    color: #6F4F28;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.highlight-card p {
+    font-size: 1.1em;
+    color: #7D6A47; /* Muted brown text */
+}
